@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#171412" />
+  <meta name="description" content="Ali & Mai — Wedding Invitation" />
+  <title>Ali & Mai — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="opening" id="opening">
+    <div class="opening-glow"></div>
+    <div class="opening-content">
+      <div class="mini-date">16 · 10 · 2026</div>
+      <div class="monogram">A <span>&</span> M</div>
+      <p class="opening-dear" id="openingDear">Dear family & friends,</p>
+      <p class="opening-sub" id="openingSub">we have something lovely to share with you</p>
+      <button class="open-btn" id="openBtn">Open Invitation</button>
+      <div class="skip">Tap anywhere to skip</div>
+    </div>
+  </div>
+
+  <button class="lang-toggle" id="langToggle" aria-label="Switch language">العربية</button>
+
+  <main id="main" class="locked">
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Ali and Mai wedding photo"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-en="You are invited" data-ar="أنتم مدعوون">You are invited</p>
+        <p class="small-line" data-en="to celebrate the wedding of" data-ar="للاحتفال بزفاف">to celebrate the wedding of</p>
+        <h1>Ali <span>&</span> Mai</h1>
+        <p class="hero-date" data-en="Friday · 16 October 2026 · 7:00 PM" data-ar="الجمعة · 16 أكتوبر 2026 · 7:00 مساءً">Friday · 16 October 2026 · 7:00 PM</p>
+        <div class="scroll-hint">↓</div>
+      </div>
+    </section>
+
+    <section class="intro section-narrow">
+      <div class="ornament">✦</div>
+      <div class="monogram large">A <span>&</span> M</div>
+      <h2 data-en="The wedding of" data-ar="زفاف">The wedding of</h2>
+      <h3>Ali Mohamed <span>&</span> Mai Marwan</h3>
+      <p class="quran" dir="rtl">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً﴾</p>
+      <p class="translation" data-en="Among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them, and He placed between you affection and mercy." data-ar="ومن آياته أن خلق لكم أزواجًا من أنفسكم لتسكنوا إليها، وجعل بينكم مودة ورحمة.">Among His signs is that He created for you spouses from among yourselves so that you may find tranquility in them, and He placed between you affection and mercy.</p>
+      <p class="announcement" data-en="With joy and gratitude, we invite you to share this beautiful evening with us." data-ar="بكل فرحة وامتنان، ندعوكم لمشاركتنا هذه الليلة الجميلة.">With joy and gratitude, we invite you to share this beautiful evening with us.</p>
+    </section>
+
+    <section class="photo-break">
+      <div class="photo-card"><img src="assets/hero.jpg" alt="Wedding moment" /></div>
+    </section>
+
+    <section class="details section-narrow">
+      <p class="section-kicker" data-en="Save the date" data-ar="احتفظوا بالموعد">Save the date</p>
+      <h2>16 <span>·</span> 10 <span>·</span> 2026</h2>
+      <div class="detail-grid">
+        <div class="detail-item">
+          <span class="detail-icon">◷</span>
+          <strong data-en="Time" data-ar="الوقت">Time</strong>
+          <p data-en="7:00 PM" data-ar="7:00 مساءً">7:00 PM</p>
+        </div>
+        <div class="detail-item">
+          <span class="detail-icon">⌖</span>
+          <strong data-en="Venue" data-ar="المكان">Venue</strong>
+          <p>Garden De La Vie</p>
+        </div>
+      </div>
+      <div class="venue-note">
+        <p data-en="King Mariout, Alexandria, Egypt" data-ar="كينج مريوط، الإسكندرية، مصر">King Mariout, Alexandria, Egypt</p>
+        <p data-en="Directly on the main road, just after El Karkas Grills Village, near the Borg El Arab Stadium area." data-ar="مباشرة على الطريق الرئيسي بعد قرية مشويات الكركاس، بالقرب من منطقة استاد برج العرب.">Directly on the main road, just after El Karkas Grills Village, near the Borg El Arab Stadium area.</p>
+      </div>
+      <div class="buttons">
+        <a class="outline-btn" href="https://share.google/EgH8s3uCQ1uZLlEsW" target="_blank" rel="noopener" data-en="Get directions" data-ar="الاتجاهات">Get directions</a>
+        <button class="outline-btn" id="calendarBtn" data-en="Add to calendar" data-ar="إضافة إلى التقويم">Add to calendar</button>
+      </div>
+    </section>
+
+    <section class="countdown-section">
+      <div class="countdown-inner">
+        <p class="section-kicker" data-en="Counting down" data-ar="العد التنازلي">Counting down</p>
+        <div class="countdown" id="countdown">
+          <div><span id="days">00</span><small data-en="Days" data-ar="يوم">Days</small></div>
+          <div><span id="hours">00</span><small data-en="Hours" data-ar="ساعة">Hours</small></div>
+          <div><span id="minutes">00</span><small data-en="Minutes" data-ar="دقيقة">Minutes</small></div>
+          <div><span id="seconds">00</span><small data-en="Seconds" data-ar="ثانية">Seconds</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing section-narrow">
+      <div class="ornament">❦</div>
+      <h2 data-en="Your presence is the most beautiful gift" data-ar="وجودكم أجمل هدية">Your presence is the most beautiful gift</h2>
+      <p class="closing-date">16 . 10 . 2026</p>
+      <div class="monogram">A <span>&</span> M</div>
+    </section>
+  </main>
+
+  <footer>Ali & Mai · 2026</footer>
+  <script src="script.js"></script>
+</body>
+</html>
